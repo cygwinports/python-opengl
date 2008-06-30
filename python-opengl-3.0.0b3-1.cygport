@@ -1,0 +1,14 @@
+ORIG_PN=PyOpenGL
+inherit distutils
+
+DESCRIPTION="Python OpenGL bindings"
+HOMEPAGE="http://pyopengl.sourceforge.net/"
+SRC_URI="mirror://sourceforge/pyopengl/${ORIG_PN}-${PV}.tar.gz"
+
+src_install() {
+	cd ${B}
+	distutils_install
+
+	sed -e 's|posix|cygwin|' \
+		-i ${D}${PYTHON_SITELIB}/PyOpenGL-${PV}-py${PYTHON_VERSION}.egg-info/entry_points.txt
+}

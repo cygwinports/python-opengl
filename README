@@ -4,18 +4,19 @@ PyOpenGL is the cross platform Python binding to OpenGL
 and related APIs.
 
 Runtime requirements:
-  libGL1-6.5.3-1
-  libGLU1-6.5.3-1
+  libGL1-7.0.3-1
+  libGLU1-7.0.3-1
   libgle3-3.1.0-1
   libglut3-2.4.0-1
-  python-2.5.1-1
-  python-numpy-1.0.3-1
+  python-2.5.2-1
+  python-numpy-1.0.4-1
+  python-setuptools-0.6c6-1
 
 Build requirements:
-  cygwin-1.5.24-2
-  cygport-0.3.1-1
+  cygwin-1.5.25-15
+  cygport-0.3.11-1
   python-2.5.1-1
-  python-setuptools-0.6c5-2
+  python-setuptools-0.6c6-1
 
 Canonical website:
   http://pyopengl.sourceforge.net/
@@ -26,15 +27,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-opengl-3.0.0a6-X-src.tar.bz2
+  unpack python-opengl-3.0.0b3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-opengl-3.0.0a6-X.cygport all
+  cygport ./python-opengl-3.0.0b3-X.cygport all
 
 This will create:
-  /usr/src/python-opengl-3.0.0a6-X-src.tar.bz2
-  /usr/src/python-opengl-3.0.0a6-X.tar.bz2
+  /usr/src/python-opengl-3.0.0b3-X-src.tar.bz2
+  /usr/src/python-opengl-3.0.0b3-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,6 +56,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/fence.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/fence.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/fence.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/flush_buffer_range.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/flush_buffer_range.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/flush_buffer_range.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/specular_vector.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/specular_vector.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/APPLE/specular_vector.pyo
@@ -121,9 +125,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects_new.py
-  /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects_new.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects_new.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shading_language_100.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shading_language_100.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shading_language_100.pyo
@@ -259,6 +260,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/bgra.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/bgra.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/bgra.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/bindable_uniform.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/bindable_uniform.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/bindable_uniform.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/blend_color.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/blend_color.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/blend_color.pyo
@@ -307,15 +311,39 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/depth_bounds_test.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/depth_bounds_test.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/depth_bounds_test.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_buffers2.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_buffers2.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_buffers2.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_instanced.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_instanced.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_instanced.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_range_elements.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_range_elements.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/draw_range_elements.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/fog_coord.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/fog_coord.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/fog_coord.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_blit.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_blit.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_blit.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_multisample.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_multisample.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_multisample.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_object.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_object.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_object.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_sRGB.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_sRGB.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/framebuffer_sRGB.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/geometry_shader4.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/geometry_shader4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/geometry_shader4.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/gpu_program_parameters.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/gpu_program_parameters.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/gpu_program_parameters.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/gpu_shader4.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/gpu_shader4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/gpu_shader4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/histogram.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/histogram.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/histogram.pyo
@@ -343,6 +371,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/multisample.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/multisample.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/multisample.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_depth_stencil.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_depth_stencil.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_depth_stencil.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_float.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_float.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_float.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_pixels.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_pixels.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/packed_pixels.pyo
@@ -379,6 +413,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/shared_texture_palette.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/shared_texture_palette.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/shared_texture_palette.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/stencil_clear_tag.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/stencil_clear_tag.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/stencil_clear_tag.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/stencil_two_side.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/stencil_two_side.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/stencil_two_side.pyo
@@ -394,6 +431,18 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture3D.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture3D.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture3D.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_array.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_array.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_array.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_buffer_object.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_buffer_object.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_buffer_object.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_latc.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_latc.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_latc.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_rgtc.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_rgtc.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_rgtc.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_s3tc.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_s3tc.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_compression_s3tc.pyo
@@ -412,6 +461,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_filter_anisotropic.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_filter_anisotropic.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_filter_anisotropic.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_integer.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_integer.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_integer.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_lod_bias.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_lod_bias.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_lod_bias.pyo
@@ -424,6 +476,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_perturb_normal.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_perturb_normal.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_perturb_normal.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_sRGB.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_sRGB.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_sRGB.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_shared_exponent.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_shared_exponent.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/texture_shared_exponent.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/timer_query.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/timer_query.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/timer_query.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/vertex_array.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/vertex_array.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/EXT/vertex_array.pyo
@@ -436,6 +497,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/__init__.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/frame_terminator.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/frame_terminator.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/frame_terminator.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/string_marker.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/string_marker.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/GREMEDY/string_marker.pyo
@@ -520,6 +584,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/copy_depth_to_color.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/copy_depth_to_color.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/copy_depth_to_color.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/depth_buffer_float.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/depth_buffer_float.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/depth_buffer_float.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/depth_clamp.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/depth_clamp.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/depth_clamp.pyo
@@ -541,9 +608,24 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program2.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program2.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program2.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program_option.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program_option.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/fragment_program_option.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/framebuffer_multisample_coverage.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/framebuffer_multisample_coverage.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/framebuffer_multisample_coverage.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/geometry_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/geometry_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/geometry_program4.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/geometry_shader4.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/geometry_shader4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/geometry_shader4.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/gpu_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/gpu_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/gpu_program4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/half_float.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/half_float.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/half_float.pyo
@@ -559,6 +641,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/packed_depth_stencil.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/packed_depth_stencil.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/packed_depth_stencil.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/parameter_buffer_object.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/parameter_buffer_object.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/parameter_buffer_object.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/pixel_data_range.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/pixel_data_range.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/pixel_data_range.pyo
@@ -601,6 +686,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/texture_shader3.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/texture_shader3.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/texture_shader3.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/transform_feedback.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/transform_feedback.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/transform_feedback.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_array_range.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_array_range.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_array_range.pyo
@@ -622,6 +710,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_program3.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_program3.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_program3.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/NV/vertex_program4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/OES/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/OES/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/OES/__init__.pyo
@@ -901,6 +992,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/GL_2_0.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/GL_2_0.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/GL_2_0.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/GL_2_1.py
+  /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/GL_2_1.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/GL_2_1.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/VERSION/__init__.pyo
@@ -1006,9 +1100,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/arrays/arrayhelpers.py
   /usr/lib/python2.5/site-packages/OpenGL/arrays/arrayhelpers.pyc
   /usr/lib/python2.5/site-packages/OpenGL/arrays/arrayhelpers.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/arrays/ctarrays.py
-  /usr/lib/python2.5/site-packages/OpenGL/arrays/ctarrays.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/arrays/ctarrays.pyo
   /usr/lib/python2.5/site-packages/OpenGL/arrays/ctypesarrays.py
   /usr/lib/python2.5/site-packages/OpenGL/arrays/ctypesarrays.pyc
   /usr/lib/python2.5/site-packages/OpenGL/arrays/ctypesarrays.pyo
@@ -1036,6 +1127,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/arrays/numeric.py
   /usr/lib/python2.5/site-packages/OpenGL/arrays/numeric.pyc
   /usr/lib/python2.5/site-packages/OpenGL/arrays/numeric.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/arrays/numericnames.py
+  /usr/lib/python2.5/site-packages/OpenGL/arrays/numericnames.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/arrays/numericnames.pyo
   /usr/lib/python2.5/site-packages/OpenGL/arrays/numpymodule.py
   /usr/lib/python2.5/site-packages/OpenGL/arrays/numpymodule.pyc
   /usr/lib/python2.5/site-packages/OpenGL/arrays/numpymodule.pyo
@@ -1069,6 +1163,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/platform/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/platform/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/platform/__init__.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/platform/baseplatform.py
+  /usr/lib/python2.5/site-packages/OpenGL/platform/baseplatform.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/platform/baseplatform.pyo
   /usr/lib/python2.5/site-packages/OpenGL/platform/ctypesloader.py
   /usr/lib/python2.5/site-packages/OpenGL/platform/ctypesloader.pyc
   /usr/lib/python2.5/site-packages/OpenGL/platform/ctypesloader.pyo
@@ -1093,6 +1190,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/fence.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/fence.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/fence.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/flush_buffer_range.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/flush_buffer_range.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/flush_buffer_range.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/specular_vector.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/specular_vector.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/specular_vector.pyo
@@ -1282,6 +1382,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/422_pixels.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/422_pixels.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/422_pixels.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/GL_422_pixels.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/GL_422_pixels.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/GL_422_pixels.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/__init__.pyo
@@ -1291,6 +1394,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/bgra.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/bgra.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/bgra.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/bindable_uniform.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/bindable_uniform.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/bindable_uniform.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/blend_color.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/blend_color.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/blend_color.pyo
@@ -1339,15 +1445,39 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/depth_bounds_test.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/depth_bounds_test.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/depth_bounds_test.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_buffers2.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_buffers2.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_buffers2.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_instanced.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_instanced.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_instanced.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_range_elements.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_range_elements.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/draw_range_elements.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/fog_coord.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/fog_coord.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/fog_coord.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_blit.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_blit.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_blit.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_multisample.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_multisample.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_multisample.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_object.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_object.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_object.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_sRGB.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_sRGB.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/framebuffer_sRGB.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/geometry_shader4.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/geometry_shader4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/geometry_shader4.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/gpu_program_parameters.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/gpu_program_parameters.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/gpu_program_parameters.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/gpu_shader4.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/gpu_shader4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/gpu_shader4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/histogram.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/histogram.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/histogram.pyo
@@ -1375,6 +1505,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/multisample.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/multisample.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/multisample.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_depth_stencil.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_depth_stencil.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_depth_stencil.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_float.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_float.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_float.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_pixels.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_pixels.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/packed_pixels.pyo
@@ -1411,6 +1547,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/shared_texture_palette.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/shared_texture_palette.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/shared_texture_palette.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/stencil_clear_tag.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/stencil_clear_tag.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/stencil_clear_tag.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/stencil_two_side.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/stencil_two_side.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/stencil_two_side.pyo
@@ -1426,6 +1565,18 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture3D.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture3D.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture3D.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_array.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_array.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_array.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_buffer_object.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_buffer_object.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_buffer_object.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_latc.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_latc.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_latc.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_rgtc.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_rgtc.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_rgtc.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_s3tc.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_s3tc.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_compression_s3tc.pyo
@@ -1444,6 +1595,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_filter_anisotropic.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_filter_anisotropic.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_filter_anisotropic.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_integer.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_integer.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_integer.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_lod_bias.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_lod_bias.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_lod_bias.pyo
@@ -1456,6 +1610,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_perturb_normal.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_perturb_normal.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_perturb_normal.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_sRGB.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_sRGB.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_sRGB.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_shared_exponent.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_shared_exponent.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/texture_shared_exponent.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/timer_query.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/timer_query.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/timer_query.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/vertex_array.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/vertex_array.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/EXT/vertex_array.pyo
@@ -1468,6 +1631,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/__init__.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/frame_terminator.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/frame_terminator.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/frame_terminator.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/string_marker.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/string_marker.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/GREMEDY/string_marker.pyo
@@ -1543,6 +1709,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESA/ycbcr_texture.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESA/ycbcr_texture.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESA/ycbcr_texture.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESAX/__init__.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESAX/__init__.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESAX/__init__.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESAX/texture_stack.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESAX/texture_stack.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/MESAX/texture_stack.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/__init__.pyo
@@ -1552,6 +1724,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/copy_depth_to_color.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/copy_depth_to_color.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/copy_depth_to_color.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/depth_buffer_float.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/depth_buffer_float.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/depth_buffer_float.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/depth_clamp.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/depth_clamp.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/depth_clamp.pyo
@@ -1573,9 +1748,24 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program2.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program2.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program2.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program_option.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program_option.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/fragment_program_option.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/framebuffer_multisample_coverage.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/framebuffer_multisample_coverage.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/framebuffer_multisample_coverage.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/geometry_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/geometry_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/geometry_program4.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/geometry_shader4.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/geometry_shader4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/geometry_shader4.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/gpu_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/gpu_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/gpu_program4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/half_float.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/half_float.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/half_float.pyo
@@ -1591,6 +1781,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/packed_depth_stencil.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/packed_depth_stencil.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/packed_depth_stencil.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/parameter_buffer_object.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/parameter_buffer_object.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/parameter_buffer_object.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/pixel_data_range.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/pixel_data_range.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/pixel_data_range.pyo
@@ -1633,6 +1826,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/texture_shader3.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/texture_shader3.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/texture_shader3.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/transform_feedback.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/transform_feedback.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/transform_feedback.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_array_range.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_array_range.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_array_range.pyo
@@ -1654,6 +1850,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_program3.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_program3.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_program3.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_program4.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_program4.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/NV/vertex_program4.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/OES/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/OES/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/OES/__init__.pyo
@@ -1927,6 +2126,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/GL_2_0.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/GL_2_0.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/GL_2_0.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/GL_2_1.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/GL_2_1.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/GL_2_1.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/VERSION/__init__.pyo
@@ -1957,6 +2159,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLE/constants.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLE/constants.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLE/constants.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/TYPES_DEFINED.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/TYPES_DEFINED.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/TYPES_DEFINED.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/__init__.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/__init__.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/__init__.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/__init__.pyo
@@ -1975,27 +2183,45 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/constants.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/constants.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/constants.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/__init__.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/__init__.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/__init__.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/annotations.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/annotations.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/annotations.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/constants.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/constants.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/constants.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/WGL.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/WGL.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/WGL.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX_ARB.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX_ARB.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX_ARB.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX_NV.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX_NV.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_GLX_NV.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL_ARB.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL_ARB.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL_ARB.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL_NV.py
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL_NV.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/raw/_WGL_NV.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/__init__.pyo
   /usr/lib/python2.5/site-packages/OpenGL/tests/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/tests/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/tests/__init__.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/tests/glread_test.py
+  /usr/lib/python2.5/site-packages/OpenGL/tests/glread_test.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/tests/glread_test.pyo
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_glgetfloat_leak.py
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_glgetfloat_leak.pyc
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_glgetfloat_leak.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glut_function_predef.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glut_function_predef.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glut_function_predef.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit.py
+  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit.pyc
+  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit.pyo
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit_0args.py
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit_0args.pyc
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit_0args.pyo
@@ -2005,36 +2231,33 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_loadglut.py
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_loadglut.pyc
   /usr/lib/python2.5/site-packages/OpenGL/tests/test_loadglut.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_nolights.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_nolights.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_nolights.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_reported_leak.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_reported_leak.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_reported_leak.pyo
   /usr/lib/python2.5/site-packages/OpenGL/tests/testing_context.py
   /usr/lib/python2.5/site-packages/OpenGL/tests/testing_context.pyc
   /usr/lib/python2.5/site-packages/OpenGL/tests/testing_context.pyo
   /usr/lib/python2.5/site-packages/OpenGL/tests/tests.py
   /usr/lib/python2.5/site-packages/OpenGL/tests/tests.pyc
   /usr/lib/python2.5/site-packages/OpenGL/tests/tests.pyo
+  /usr/lib/python2.5/site-packages/OpenGL/tests/yingyang.png
   /usr/lib/python2.5/site-packages/OpenGL/version.py
   /usr/lib/python2.5/site-packages/OpenGL/version.pyc
   /usr/lib/python2.5/site-packages/OpenGL/version.pyo
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.py
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.pyc
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.pyo
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0a6-py2.5.egg-info/PKG-INFO
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0a6-py2.5.egg-info/SOURCES.txt
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0a6-py2.5.egg-info/dependency_links.txt
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0a6-py2.5.egg-info/entry_points.txt
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0a6-py2.5.egg-info/top_level.txt
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0a6-py2.5.egg-info/zip-safe
-  /usr/share/doc/Cygwin/python-opengl-3.0.0a6.README
-  /usr/share/doc/python-opengl-3.0.0a6/LICENSE.txt
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b3-py2.5.egg-info/PKG-INFO
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b3-py2.5.egg-info/SOURCES.txt
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b3-py2.5.egg-info/dependency_links.txt
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b3-py2.5.egg-info/entry_points.txt
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b3-py2.5.egg-info/not-zip-safe
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b3-py2.5.egg-info/top_level.txt
+  /usr/share/doc/python-opengl-3.0.0b3/LICENSE.txt
 
 ------------------
 
 Port Notes:
+
+----- version 3.0.0b3-1 -----
+Version bump.
 
 ----- version 3.0.0a6-1 -----
 Initial release for Cygwin.
