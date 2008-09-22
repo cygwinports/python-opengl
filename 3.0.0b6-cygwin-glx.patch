@@ -1,5 +1,15 @@
---- origsrc/PyOpenGL-3.0.0b3/OpenGL/platform/glx.py	2008-03-16 22:13:13.000000000 -0500
-+++ src/PyOpenGL-3.0.0b3/OpenGL/platform/glx.py	2008-06-30 02:38:07.453125000 -0500
+--- origsrc/PyOpenGL-3.0.0b6/OpenGL/__init__.py	2008-09-07 20:22:17.000000000 -0500
++++ src/PyOpenGL-3.0.0b6/OpenGL/__init__.py	2008-09-22 12:30:17.001362800 -0500
+@@ -104,6 +104,7 @@
+ PlatformPlugin( 'nt', 'OpenGL.platform.win32.Win32Platform' )
+ PlatformPlugin( 'posix ', 'OpenGL.platform.glx.GLXPlatform' )
+ PlatformPlugin( 'linux2', 'OpenGL.platform.glx.GLXPlatform' )
++PlatformPlugin( 'cygwin', 'OpenGL.platform.glx.GLXPlatform' )
+ PlatformPlugin( 'darwin', 'OpenGL.platform.darwin.DarwinPlatform' )
+ 
+ FormatHandler( 'none', 'OpenGL.arrays.nones.NoneHandler' )
+--- origsrc/PyOpenGL-3.0.0b6/OpenGL/platform/glx.py	2008-09-22 12:33:27.360737800 -0500
++++ src/PyOpenGL-3.0.0b6/OpenGL/platform/glx.py	2008-09-22 12:24:19.000000000 -0500
 @@ -1,9 +1,20 @@
  """GLX (x-windows)-specific platform features"""
  import ctypes, ctypes.util
