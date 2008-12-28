@@ -4,18 +4,18 @@ PyOpenGL is the cross platform Python binding to OpenGL
 and related APIs.
 
 Runtime requirements:
-  libGL1-7.0.4-1
-  libGLU1-7.0.4-1
-  libgle3-3.1.0-1
+  libGL1-7.2-2
+  libGLU1-7.2-2
+  libgle3-3.1.0-2
   libglut3-2.4.0-1
   python-2.5.2-4
-  python-numpy-1.0.4-1
-  python-setuptools-0.6c6-1
+  python-numpy-1.2.1-1
+  python-setuptools-0.6c9-1
 
 Build requirements:
-  cygport-0.4.0-1
-  python-2.5.2-3
-  python-setuptools-0.6c6-1
+  cygport-0.4.3-1
+  python-2.5.2-4
+  python-setuptools-0.6c9-1
 
 Canonical website:
   http://pyopengl.sourceforge.net/
@@ -26,15 +26,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-opengl-3.0.0b6-X-src.tar.bz2
+  unpack python-opengl-3.0.0b8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-opengl-3.0.0b6-X.cygport all
+  cygport ./python-opengl-3.0.0b8-X.cygport all
 
 This will create:
-  /usr/src/python-opengl-3.0.0b6-X-src.tar.bz2
-  /usr/src/python-opengl-3.0.0b6-X.tar.bz2
+  /usr/src/python-opengl-3.0.0b8-X-src.tar.bz2
+  /usr/src/python-opengl-3.0.0b8-X.tar.bz2
 
 -------------------------------------------
 
@@ -148,9 +148,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects_new.py
-  /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects_new.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shader_objects_new.pyo
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shading_language_100.py
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shading_language_100.pyc
   /usr/lib/python2.5/site-packages/OpenGL/GL/ARB/shading_language_100.pyo
@@ -1243,9 +1240,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/plugins.py
   /usr/lib/python2.5/site-packages/OpenGL/plugins.pyc
   /usr/lib/python2.5/site-packages/OpenGL/plugins.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/AGL/__init__.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/AGL/__init__.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/AGL/__init__.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GL/APPLE/__init__.pyo
@@ -2275,12 +2269,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLE/constants.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLE/constants.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLE/constants.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/TYPES_DEFINED.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/TYPES_DEFINED.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/TYPES_DEFINED.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/__init__.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/__init__.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLEXT/__init__.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/__init__.pyo
@@ -2290,9 +2278,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/constants.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/constants.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/constants.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/old__init__.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/old__init__.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLU/old__init__.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/__init__.pyo
@@ -2302,24 +2287,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/constants.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/constants.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/constants.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/freeglut.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/freeglut.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/freeglut.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/old__init__.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/old__init__.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLUT/old__init__.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLX.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLX.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/GLX.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/__init__.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/__init__.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/__init__.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/annotations.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/annotations.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/annotations.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/constants.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/constants.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/GLX/constants.pyo
   /usr/lib/python2.5/site-packages/OpenGL/raw/WGL.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/WGL.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/WGL.pyo
@@ -2344,68 +2314,20 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/raw/__init__.py
   /usr/lib/python2.5/site-packages/OpenGL/raw/__init__.pyc
   /usr/lib/python2.5/site-packages/OpenGL/raw/__init__.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/gl.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/gl.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/gl.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/raw/glu.py
-  /usr/lib/python2.5/site-packages/OpenGL/raw/glu.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/raw/glu.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/__init__.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/__init__.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/__init__.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/glreadpixelsubformat.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/glreadpixelsubformat.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/glreadpixelsubformat.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_colorpointer.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_colorpointer.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_colorpointer.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_contiguous.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_contiguous.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_contiguous.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glcolorpointerf.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glcolorpointerf.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glcolorpointerf.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glgetfloat_leak.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glgetfloat_leak.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glgetfloat_leak.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit_0args.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit_0args.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutinit_0args.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutwindow.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutwindow.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_glutwindow.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_loadglut.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_loadglut.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_loadglut.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_tess1.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_tess1.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/test_tess1.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/testing_context.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/testing_context.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/testing_context.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/tests.py
-  /usr/lib/python2.5/site-packages/OpenGL/tests/tests.pyc
-  /usr/lib/python2.5/site-packages/OpenGL/tests/tests.pyo
-  /usr/lib/python2.5/site-packages/OpenGL/tests/yingyang.png
   /usr/lib/python2.5/site-packages/OpenGL/version.py
   /usr/lib/python2.5/site-packages/OpenGL/version.pyc
   /usr/lib/python2.5/site-packages/OpenGL/version.pyo
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.py
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.pyc
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.pyo
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b6-py2.5.egg-info/PKG-INFO
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b6-py2.5.egg-info/SOURCES.txt
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b6-py2.5.egg-info/dependency_links.txt
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b6-py2.5.egg-info/not-zip-safe
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b6-py2.5.egg-info/top_level.txt
-  /usr/share/doc/python-opengl-3.0.0b6/LICENSE.txt
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0b8-py2.5.egg-info
 
 ------------------
 
 Port Notes:
+
+----- version 3.0.0b8-1 -----
+Version bump.
 
 ----- version 3.0.0b6-1 -----
 Version bump.
