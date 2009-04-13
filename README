@@ -26,15 +26,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-opengl-3.0.0c1-X-src.tar.bz2
+  unpack python-opengl-3.0.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-opengl-3.0.0c1-X.cygport all
+  cygport ./python-opengl-3.0.0-X.cygport all
 
 This will create:
-  /usr/src/python-opengl-3.0.0c1-X-src.tar.bz2
-  /usr/src/python-opengl-3.0.0c1-X.tar.bz2
+  /usr/src/python-opengl-3.0.0-X-src.tar.bz2
+  /usr/src/python-opengl-3.0.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -2320,11 +2320,14 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.py
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.pyc
   /usr/lib/python2.5/site-packages/OpenGL/wrapper.pyo
-  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0c1-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/PyOpenGL-3.0.0-py2.5.egg-info
 
 ------------------
 
 Port Notes:
+
+----- version 3.0.0-1 -----
+Version bump.
 
 ----- version 3.0.0c1-10 -----
 Initial release for Cygwin 1.7.
