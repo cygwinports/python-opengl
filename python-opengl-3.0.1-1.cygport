@@ -3,5 +3,5 @@ inherit distutils
 
 DESCRIPTION="Python OpenGL bindings"
 HOMEPAGE="http://pyopengl.sourceforge.net/"
-SRC_URI="mirror://sourceforge/pyopengl/${ORIG_PN}-${PV}.tar.gz"
+
 PATCH_URI="3.0.0b6-cygwin-glx.patch"
