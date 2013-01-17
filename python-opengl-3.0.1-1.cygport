@@ -1,7 +1,0 @@
-ORIG_PN=PyOpenGL
-inherit distutils
-
-DESCRIPTION="Python OpenGL bindings"
-HOMEPAGE="http://pyopengl.sourceforge.net/"
-
-PATCH_URI="3.0.0b6-cygwin-glx.patch"

@@ -1,0 +1,14 @@
+ORIG_PN=PyOpenGL
+inherit distutils
+
+NAME="python-opengl"
+VERSION=3.0.2
+RELEASE=1
+CATEGORY="Python X11"
+REQUIRES="libGL-devel libGLU-devel libglut-devel libgle-devel"
+SUMMARY="Python OpenGL bindings"
+DESCRIPTION="PyOpenGL is the cross platform Python binding to OpenGL
+and related APIs."
+HOMEPAGE="http://pyopengl.sourceforge.net/"
+
+PATCH_URI="3.0.0b6-cygwin-glx.patch"

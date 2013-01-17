@@ -1,5 +1,0 @@
-category: Python X11
-requires: libGL-devel libGLU-devel libglut-devel libgle-devel python python-numpy python-setuptools
-sdesc: "Python OpenGL bindings"
-ldesc: "PyOpenGL is the cross platform Python binding to OpenGL
-and related APIs."
