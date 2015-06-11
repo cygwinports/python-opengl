@@ -1,0 +1,10 @@
+--- origsrc/PyOpenGL-3.1.0/OpenGL/__init__.py	2014-04-16 10:37:16.000000000 -0500
++++ src/PyOpenGL-3.1.0/OpenGL/__init__.py	2015-06-11 17:32:00.795935000 -0500
+@@ -203,6 +203,7 @@ MODULE_ANNOTATIONS = False
+ from OpenGL.plugins import PlatformPlugin, FormatHandler
+ PlatformPlugin( 'nt', 'OpenGL.platform.win32.Win32Platform' )
+ PlatformPlugin( 'linux2', 'OpenGL.platform.glx.GLXPlatform' )
++PlatformPlugin( 'cygwin', 'OpenGL.platform.glx.GLXPlatform' )
+ PlatformPlugin( 'darwin', 'OpenGL.platform.darwin.DarwinPlatform' )
+ PlatformPlugin( 'posix', 'OpenGL.platform.glx.GLXPlatform' )
+ PlatformPlugin( 'osmesa', 'OpenGL.platform.osmesa.OSMesaPlatform')
