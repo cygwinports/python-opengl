@@ -1,9 +1,9 @@
 ORIG_PN=PyOpenGL
-inherit distutils
+inherit python-wheel
 
 NAME="python-opengl"
 VERSION=3.1.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Python"
 SUMMARY="Python OpenGL bindings"
 DESCRIPTION="PyOpenGL is the cross platform Python binding to OpenGL
@@ -14,10 +14,5 @@ PATCH_URI="3.1.0-cygwin-glx.patch"
 
 ARCH=noarch
 
-PKG_NAMES="${NAME} ${NAME}-tk"
-python_opengl_REQUIRES="libGL-devel libGLU-devel libglut-devel libgle-devel"
-python_opengl_CONTENTS="--exclude=Tk ${PYTHON_SITELIB#/} usr/share/doc/"
-python_opengl_tk_REQUIRES="tcl-togl"
-python_opengl_tk_CONTENTS="${PYTHON_SITELIB#/}/OpenGL/Tk/"
-
-DOCS="license.txt"
+python2_opengl_REQUIRES="libGL-devel libGLU-devel libglut-devel libgle-devel python2-opengl-accelerate"
+python3_opengl_REQUIRES="libGL-devel libGLU-devel libglut-devel libgle-devel python3-opengl-accelerate"
