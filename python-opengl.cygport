@@ -14,5 +14,6 @@ PATCH_URI="3.1.0-cygwin-glx.patch"
 
 ARCH=noarch
 
+python2_opengl_OBSOLETES="python-opengl-tk"
 python2_opengl_REQUIRES="libGL-devel libGLU-devel libglut-devel libgle-devel python2-opengl-accelerate"
 python3_opengl_REQUIRES="libGL-devel libGLU-devel libglut-devel libgle-devel python3-opengl-accelerate"
